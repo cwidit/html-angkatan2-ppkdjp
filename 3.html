@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Peserta</title>
+
+  <style>
+    body {
+    font-family: 'tahoma';
+    background-color: rgb(246, 246, 237);
+    }
+
+    .card-table{
+      background-color: aliceblue;
+      padding: 30px;
+      border-radius: 4px;
+      box-shadow: 0 0 5px black;
+      width: 80%;
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    h2,
+
+    p{
+      text-align: center;
+    }
+
+    .table{
+      width: 100%;
+      border-collapse: collapse;
+      /* menghilangkan border kecil di table */
+      margin-top: 20px;
+      font-size: 15px;
+    }
+
+    .table thead tr {
+      background-color: floralwhite;
+      color: black;
+      text-align: center;
+    }
+
+    .table th, .table td {
+      border-bottom: 1px solid, black;
+      border: 1px solid;
+      padding: 12px 15px;
+  
+    }
+
+    .btn-plus {
+      text-align: right;
+    }
+
+    .btn-tambah {
+      display: inline-block;
+      /* button ngikutin panjang karakter text */
+      padding: 10px 20px;
+      background-color: cadetblue;
+      color: rgb(247, 240, 230);
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .btn-tambah:hover {
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-table">
+    <h2>Data Peserta</h2>
+    <p>Data Berikut adalah data peserta</p>
+
+    <div class="btn-plus">
+      <a href="2.html" class="btn-tambah"> + tambah peserta</a>
+    </div>
+
+    <table class="table">
+      <thead>
+        <!-- <tr>    buat table hading, kartena ada 4 heading maka di kali 4  thead>th>tr#4 -->
+          <th>No</th>
+          <th>Nama</th>
+          <th>Email</th>
+          <th>No Telp</th>
+        </tr>
+      </thead>
+      <!-- <td> isi table data, sebagai contoh jika td nya ada 4 maka dikali 4 tbody>tr>td*4  -->
+      <tbody>
+        <tr> 
+          <td>1</td>
+          <td>Cahaya</td>
+          <td>Cahaya@gmail.com</td>
+          <td>098887675</td>
+        </tr></tbody>
+        <tr> 
+          <td>2</td>
+          <td>Abid</td>
+          <td>Abida@gmail.com</td>
+          <td>087665434</td>
+        </tr></tbody>
+        <tr> 
+          <td>3</td>
+          <td>Priya</td>
+            <td>priya@gmail.com</td>
+            <td>088887675</td>
+          </tr></tbody>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(135, 100, 53);
+  line-height: 1.6;
+}
+
+.parallax {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bg-1 {
+  background-image: url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070');
+}
+
+.bg-2 {
+  background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070");
+}
+
+.content {
+  /* rgba : red green blue alpha */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.normal-section {
+  padding: 80px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: rgb(101, 101, 210);
+}
+
+.btn-contact {
+  padding: 12px 25px;
+  background-color: #1465bb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 20px 0;
+}

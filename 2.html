@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Peserta</title>
+
+  
+  <style>
+    body {
+    font-family: 'tahoma';
+    background-color: rgb(246, 246, 237);
+    }
+
+    h2 {
+      color: black;
+      font-size: 40px;
+    }
+
+    p{
+      color: rgb(15, 15, 16);
+      font-size: 20px;
+    }
+
+    .form-grup {
+      margin-bottom: 20px;
+    }
+    label{
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 15px;
+      
+    }
+
+    input[type='text'],
+    input[type='email'],
+    input[type='number'] {
+      width: 70%;
+      padding: 12px 15px;
+      border-radius: 10px;
+      outline: none;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
+    }
+
+    input:focus{
+      border-color: rgb(109, 85, 208);
+
+    }
+
+    .btn-submit, .btn-reset{
+      width: 50%;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-bottom: 10px;
+    }
+
+    .btn-submit{
+       background-color: rgb(59, 64, 205);
+      color: aliceblue;
+    }
+
+    .btn-reset{
+       background-color: rgb(208, 161, 91);
+      color: aliceblue;
+    }
+
+    .btn-submit:hover{
+      background-color: rgb(106, 106, 177);
+    }
+
+    .btn-reset.btn-reset:hover{
+      background-color: rgb(108, 91, 69);
+    }
+
+  </style>
+</head>
+<body>
+  <h2>Pendaftaran Siswa</h2>
+  <p>Silahkan Isi Data Diri Anda</p>
+
+  <form method="post" action="3.html">
+    <div class="form-grup">
+      <label for="nama">Nama</label>
+      <input type="text" placeholder="Masukkan Nama" required>
+    </div>
+    <div class="form-grup">
+      <label for="email">Email</label>
+      <input type="email" placeholder="Contoh : halo@gmail.com" required>
+    </div>
+    <div class="form-grup">
+      <label for="nama">No Telp</label>
+      <input type="number" placeholder="091234567" required>
+    </div>
+    <div class="form-grup">
+      <button type="submit" class="btn-submit">Simpan</button>
+      <input type="reset" class="btn-reset" value="Batal" />
+    </div>
+    </form>
+    
+</body>
+</html>
