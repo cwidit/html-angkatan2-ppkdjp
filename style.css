@@ -3,8 +3,24 @@ html {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(135, 100, 53);
+  color: rgb(121, 99, 219);
   line-height: 1.6;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px;
+}
+
+.content-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin: 10px;
 }
 
 .parallax {
@@ -20,7 +36,7 @@ html {
 }
 
 .bg-1 {
-  background-image: url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070');
+  background-image: url('https://images.unsplash.com/photo-1575237402880-4b496a83ae04?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 
 .bg-2 {
@@ -45,12 +61,15 @@ html {
 .container {
   max-width: 800px;
   margin: 0 auto;
+  color: rgb(22, 15, 6);
 }
 
 h2 {
   font-size: 2rem;
-  color: rgb(101, 101, 210);
+  color: rgb(101, 101, 164);
 }
+
+
 
 .btn-contact {
   padding: 12px 25px;
@@ -63,8 +82,57 @@ h2 {
   margin-top: 20px;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10;
+}
+
+.contact-form input,
+textarea {
+padding: 10px;
+border: 1px solid rgb(113, 99, 208);
+border-radius: 5px;
+}
+
+.contact-form button {
+  background: rgb(58, 58, 197);
+  color: aliceblue;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+/* Keahlian */
+.wraper{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skill-wraper {
+  background-color: aliceblue;
+  color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+  width: 200px;
+}
+
+.skill-wraper h3 {
+  margin-top: 0;
+  color: #3d7dc2;
+  text-align: center;
+}
+
+.skill-wraper ul {
+  padding-left: 20px;
+}
+
 footer {
-  background-color: #333;
+  background-color: #5f606a;
   text-align: center;
   padding: 20px 0;
 }
+
