@@ -8,15 +8,29 @@
 </head>
 
 <body>
+  <header class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">My Portfolio</h2>
+
+      <button onclick="toggleMenu()">☰</button>
+     <nav id="menu">
+     <a href="#home">home</a>
+     <a href="#about">about</a>
+     <a href="#ability">ability</a>
+     <a href="#contact">contact</a>
+  </nav>
+    </div>
+  
+  </header>
   <!-- parallax bikinnya pakai section -->
-  <section class="parallax bg-1">
+  <section id="home" class="parallax bg-1">
     <div class="content">
       <h1>halo, saya Widitiya Cahyani</h1>
       <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="profile-image" alt="">
       <p>Web Programmer Student</p>
     </div>
   </section>
-  <section class="normal-section">
+  <section id="about" class="normal-section">
     <div class="container">
       <h2>Tentang Saya</h2>
       <p>Saat ini, saya mengikuti pelatihan web programming di PPKD Jakarta Pusat</p>
@@ -30,7 +44,7 @@
       
     </div>
   </section>
-  <section class="parallax bg-2">
+  <section id="ability" class="parallax bg-2">
     <div class="content">
       <h2>Keahlian Saya</h2>
       
@@ -51,13 +65,14 @@
           <ul>
             <li>Remote</li>
             <li>Abstrak</li>
+            <li>Beta</li>
             <li>Lain-lain</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  <section class="normal section">
+  <section id="contact" class="normal section">
     <div class="container">
       <h2>Hubungi Saya</h2>
       <p>Tertarik Bekerja Sama? Kirimkan pesan melalui email atau media sosial saya</p>
@@ -74,5 +89,11 @@
   <footer>
     <p>&copy; 2026 Personal Brand. Dibuat di PPKD JakPus</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show")
+    }
+  </script>
 </body>
 </html>

@@ -5,6 +5,7 @@ html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(121, 99, 219);
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 .profile-image {
@@ -21,6 +22,11 @@ html {
   border-radius: 10%;
   object-fit: cover;
   margin: 10px;
+  transition: 0.3s;
+}
+
+.content-img:hover {
+  transform: scale(1.05);
 }
 
 .parallax {
@@ -62,6 +68,8 @@ html {
   max-width: 800px;
   margin: 0 auto;
   color: rgb(22, 15, 6);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 h2 {
@@ -136,3 +144,70 @@ footer {
   padding: 20px 0;
 }
 
+nav a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  color: rgb(207, 164, 207);
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e674e6;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  color: #7d76e5;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+/* burger menu start */
+#menu {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-container button {
+  display: none;
+}
+/* ukuran tab */
+@media (max-width: 768px){
+.nav-container button {
+  display: block;
+}
+#menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 150px;
+  padding: 10px 0px;
+}
+#menu a {
+  padding: 10px;
+}
+#menu.show {
+  display: flex;
+}
+}
+/* burger menu end */
+
+@media (max width: 480px) {
+  .img {
+    grid-template-columns: 1 fr;
+  }
+}
