@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 :root {
   --primary-color:#0058be;
   --surface-color: #f7f9fb;
